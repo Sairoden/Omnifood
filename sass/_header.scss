@@ -1,0 +1,57 @@
+// HEADER
+.header {
+  align-items: center;
+  background-color: $tint;
+  display: flex;
+  height: 9.6rem;
+  // Because we want header to be sticky later
+  justify-content: space-between;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+// NAVIGATION
+.main-nav-list {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+
+  .main-nav-link {
+    &:link,
+    &:visited {
+      color: $greys-dark;
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-color-dark;
+    }
+
+    &.nav-cta {
+      &:link,
+      &:visited {
+        background-color: $primary-color;
+        border-radius: 9px;
+        color: #fff;
+        padding: 1.2rem 2.4rem;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $primary-color-dark;
+        border-radius: 9px;
+        color: #fff;
+        padding: 1.2rem 2.4rem;
+      }
+    }
+  }
+}
