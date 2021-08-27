@@ -41,7 +41,7 @@ Paragraph default: 1.6
 --- 06 BORDER-RADIUS 
 
 Default: 9px
-
+ 
 */
 
 * {
@@ -63,9 +63,9 @@ body {
 
 .container {
   /* 1140px */
+  margin: 0 auto;
   max-width: 120rem;
   padding: 0 3.2rem;
-  margin: 0 auto;
 }
 
 .margin-right-sm {
