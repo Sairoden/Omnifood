@@ -9,3 +9,23 @@
 .center-text {
   text-align: center;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+
+  &-item {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+  }
+
+  &-icon {
+    height: 3rem;
+    stroke: $primary-color;
+    width: 3rem;
+  }
+}
