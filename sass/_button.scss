@@ -1,21 +1,27 @@
 .btn {
+  &,
   &:link,
   &:visited {
     border-radius: 9px;
-    color: #fff;
     display: inline-block;
     font-weight: 600;
     font-size: 2rem;
     padding: 1.6rem 3.2rem;
     text-decoration: none;
+
     /* Put transition on original "state" */
     transition: all 0.3s;
+
+    // Only necessary for .btn
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
   }
 
   &--full:link,
   &--full:visited {
     background-color: #e67e22;
-    color: #fff;
+    color: $white;
   }
 
   &--full:hover,
@@ -25,7 +31,7 @@
 
   &--outline:link,
   &--outline:visited {
-    background-color: #fff;
+    background-color: $white;
     color: #555;
   }
 
@@ -33,10 +39,22 @@
   &--outline:active {
     background-color: #fdf2e9;
 
-    /* border: 3px solid #fff; */
+    /* border: 3px solid $white; */
 
     /* Trick to add border inside */
-    box-shadow: inset 0 0 3px #fff;
+    box-shadow: inset 0 0 3px $white;
+  }
+
+  &--form {
+    align-self: end;
+    background-color: $primary-color-darker;
+    color: $tint;
+    padding: 1.2rem;
+
+    &:hover {
+      background-color: $white;
+      color: $greys-light;
+    }
   }
 }
 
@@ -57,3 +75,5 @@
     color: $primary-color-dark;
   }
 }
+
+
