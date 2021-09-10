@@ -1,0 +1,74 @@
+.footer {
+  border-top: 1px solid #eee;
+  padding: 12.8rem 0;
+
+  .grid--footer {
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  }
+
+  .logo-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+  }
+
+  .contacts {
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .address {
+    margin-bottom: 2.4rem;
+  }
+
+  &-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &-link {
+    &:link,
+    &:visited {
+      color: $greys-lighter;
+      font-size: 1.6rem;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $greys-light;
+    }
+
+    .social-icon {
+      height: 2.4rem;
+      width: 2.4rem;
+    }
+  }
+
+  .copyright {
+    color: $greys-lighter;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-top: auto;
+  }
+}
