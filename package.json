@@ -2,7 +2,6 @@
   "name": "Omnifood",
   "version": "1.0.0",
   "description": "Omnifood project",
-  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.0.0-rc.0",
